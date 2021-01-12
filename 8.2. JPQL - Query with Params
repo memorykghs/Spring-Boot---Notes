@@ -1,4 +1,4 @@
-# SpringBoot - 8
+# 8.2. JPQL - Query with Params
 
 如果今天想要在 SQL 加入使用者傳進來的參數的話，可以在 SQL 語句傳入動態查詢參數，有以下幾種方法：
 1. SQL 查詢語句串接
@@ -11,7 +11,7 @@
 3. 依參數名稱對照 ( Named Parameters )
    `"select * from STUDENT.TB_EMP where EMP_ID = :EMP_ID"`
 
-接下來的練習我們會使用第三種方式，也就是依照參數名稱將對應的參數傳入查詢條件。
+接下來的練習我們會使用第三種方式，也就是依照參數名稱將對應的參數傳入查詢條件。等一下會修改剛剛新增的 `EmpController.java` 及 `SqlAction.java` 兩個檔案。
 
 ```
 |--com.example.demospringboot
@@ -40,7 +40,8 @@
    |--SqlAction.java // 修改的檔案
 ```
 
-先修改 `SqlAction.java` 的 SQL 語句，並在方法上傳入參數 `empID`，並在方法內透過 `Query` 物件的 `setParameter()` 方法設定傳入參數。參數的名稱必須跟寫在 SQL 內的變數名稱一樣，否則會拋出錯誤。
+先修改 `SqlAction.java` 的內容，在原本的 `queryIDForList` 方法新增傳入參數 `empID`，然後修改 SQL 語句，把原本設定的查詢條件參數值以**冒號**加**變數名稱**取代，這樣 JPA 才能把參數值替換到 SQL 內。要設定傳入參數的話，可以使用 `Query` 物件的 `setParameter(key, value)` 方法設定，需要注意的是，`key` 值必須跟寫在 SQL 內的冒號後的變數名稱一樣，否則會拋出錯誤。
+
 ```java
 @Configuration
 public class SqlAction {
@@ -56,24 +57,24 @@ public class SqlAction {
 }
 ```
 
-再來修改 Controller 的部分：
+再來修改 Controller 的部分，呼叫 `queryForList()` 方法需要傳入一個型態為 `String` 的參數。
 
 ```java
 @RestController
 public class EmpController {
 
-    @Autowired
-    private SqlAction sqlAction;
+   @Autowired
+   private SqlAction sqlAction;
 
-    @RequestMapping(value = "/empName", method = RequestMethod.GET)
-    public <T> List<T> queryEmpName() {
-        return sqlAction.queryForList("12345");
-    }
+   @RequestMapping(value = "/empName", method = RequestMethod.GET)
+   public <T> List<T> queryEmpName() {
+      return sqlAction.queryForList("12345");
+   }
 }
 ```
 
-修改完後打url測試就可以拿到相對應的資料。
-![  ](/img/8.2-1.png)
+修改完後打 url 測試就可以拿到相對應的資料。
+![  ](/images/8.2-1.png)
 <br/>
 
 ## 參考
