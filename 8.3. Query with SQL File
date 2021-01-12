@@ -1,4 +1,4 @@
-# 8. Query with Dynamic SQL - 1
+# 8.3. Query with SQL File
 如果今天 SQL 是以檔案的形式記錄，我們就必須從指令的路徑讀取相對 SQL 檔案在進行查詢。所以接下來會新增一個專門用來讀取 SQL 檔案的 Class `SqlUtils.java`。
 
 ```
