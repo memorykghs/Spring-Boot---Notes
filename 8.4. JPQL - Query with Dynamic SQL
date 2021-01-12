@@ -1,4 +1,4 @@
-# 8. Query with Dynamic SQL - 2
+# 8.4. JPQL - Query with Dynamic SQL
 
 在不同的專案中，有時候會用不同的方法來達到根據傳入參數，動態調整 SQL 查詢條件，以 eBAF 專案為例，如果今天有一個 SQL 長這樣：
 
@@ -305,7 +305,7 @@ public class EMPController {
 ```
 
 測試後的結果如下：
-<img src="/images/888888.png" />
+![ ](/images/8.4-1.png)
 <br/>
 
 ## 參考
