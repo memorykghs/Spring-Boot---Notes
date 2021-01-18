@@ -11,6 +11,8 @@
    * `@Component` 加在 Class 上
    * `@Bean` 通常搭配 `@Configuration` 使用，標註在方法上
    * 雖然最後都會成為 `@Bean`
+- [ ] `@Bean` 一定要跟 `@Configuration` 搭配使用嗎?
+- [ ] 如何控制 `@Configuration` 或是 `@ControllerAdvice` 只針對某幾個 Class?
 #### CH 7
 - [ ] ORM 表現層 v.s. 業務層
 - [ ] `hashCode()` &rArr; Set 切入點?
