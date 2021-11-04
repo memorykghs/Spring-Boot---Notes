@@ -15,6 +15,24 @@
 
 #### 先放著，有空再說
 - [ ] @ConfigurationProperties & @EnableConfigurationProperties
+- [ ] yml 檢查
+```properties
+management:
+  endpoint:
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
+  endpoints:
+    web:
+      base-path: /
+      exposure:
+        include: health, info, env, prometheus, metrics, httptrace, threaddump, heapdump, loggers
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+```
 
 ## 其它
 * https://javabeat.net/spring-framework-interview-questions/
