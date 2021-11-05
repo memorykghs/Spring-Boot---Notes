@@ -33,6 +33,9 @@ management:
       prometheus:
         enabled: true
 ```
+-[ ] ObjectMapper
+   * https://super-passbook-3e3.notion.site/ObjectMapper-2367ffacf7a14beca69ae869ccb13d9a
+   * Jackson：https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations
 
 ## 其它
 * https://javabeat.net/spring-framework-interview-questions/
