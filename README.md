@@ -14,6 +14,8 @@
 - [ ] package名稱後墜與功能是否跟Annotation有關係
 
 #### 先放著，有空再說
+- [ ] Entity 映設
+  * https://super-passbook-3e3.notion.site/JPA-Associations-7b46fe01bf04482c9fd4f53865884605
 - [ ] @ConfigurationProperties & @EnableConfigurationProperties
 - [ ] yml 檢查
 ```properties
