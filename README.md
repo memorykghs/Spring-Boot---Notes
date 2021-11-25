@@ -40,6 +40,8 @@ management:
    * Jackson：https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations
    * @JsonSetter、@JsonGetter
    * @JsonAlias
+- [ ] Transactional Propagation
+   * https://www.javainuse.com/spring/boot-transaction-propagation
 
 ## 其它
 * https://javabeat.net/spring-framework-interview-questions/
