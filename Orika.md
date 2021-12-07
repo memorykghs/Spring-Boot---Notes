@@ -17,3 +17,8 @@
 2.	除非有特別註明，否則若有進行DB的insert/update/delete，皆須於service加上@Transactional(rollbackFor = Exception.class)
 3.	使用JPA進行insert/update，需於Entity中加上@NotBlank或@NotNull進行檢核(參考DB中設定非null欄位)，Hibernate會在commit時進行檢查，避免在DB報錯。
 若有檢核失敗的欄位，會於ErrorHandler中Cache並回傳E903(必填欄位不完整)(各專案設定可能不同)
+
+
+## Source Code
+* [Orika](https://github.com/orika-mapper/orika)
+* [ObjectMapper](https://github.com/joansmith/jackson-databind/blob/master/src/main/java/com/fasterxml/jackson/databind/ObjectMapper.java)
