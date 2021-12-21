@@ -43,5 +43,30 @@ management:
 - [ ] Transactional Propagation
    * https://www.javainuse.com/spring/boot-transaction-propagation
 
+## 監控 & 其他
+```xml
+<!-- Spring boot actuator to expose metrics endpoint -->
+<dependency>
+ <groupId>org.springframework.boot</groupId>
+ <artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+<!-- Micrometer Monitoring -->
+<dependency>
+ <groupId>io.micrometer</groupId>
+ <artifactId>micrometer-core</artifactId>
+</dependency>
+<dependency>
+ <groupId>io.micrometer</groupId>
+ <artifactId>micrometer-registry-prometheus</artifactId>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.owasp.antisamy/antisamy -->
+<dependency>
+ <groupId>org.owasp.antisamy</groupId>
+ <artifactId>antisamy</artifactId>
+ <version>1.6.3</version>
+</dependency>
+```
+
 ## 其它
 * https://javabeat.net/spring-framework-interview-questions/
