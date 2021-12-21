@@ -68,5 +68,8 @@ management:
 </dependency>
 ```
 
+## Log
+* https://segmentfault.com/a/1190000037598528
+
 ## 其它
 * https://javabeat.net/spring-framework-interview-questions/
