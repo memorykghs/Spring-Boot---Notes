@@ -68,6 +68,9 @@ management:
 </dependency>
 ```
 
+* [JVM應用度量框架Micrometer](https://iter01.com/437347.html)
+* [Actuator+Prometheus+Grafana監控視覺化簡介](https://www.tpisoftware.com/tpu/articleDetails/2446)
+
 ## Log
 * https://segmentfault.com/a/1190000037598528
 
