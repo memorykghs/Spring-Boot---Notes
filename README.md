@@ -52,8 +52,22 @@ management:
    * Jackson：https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations
    * @JsonSetter、@JsonGetter
    * @JsonAlias
+
+## Transaction
 - [ ] Transactional Propagation
    * https://www.javainuse.com/spring/boot-transaction-propagation
+   * https://codertw.com/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80/299872/
+
+- [ ] EntityManager
+   * https://openhome.cc/Gossip/EJB3Gossip/FirstContainerManagedJPA.html
+   * https://openhome.cc/Gossip/EJB3Gossip/EntityManagerScope.html
+   * [SharedEntityManager](https://docs.spring.io/spring-framework/docs/3.2.4.RELEASE_to_4.0.0.RELEASE/Spring%20Framework%203.2.4.RELEASE/org/springframework/orm/jpa/SharedEntityManagerCreator.html)
+   
+- [ ] Persistence Context
+   * https://www.baeldung.com/jpa-hibernate-persistence-context
+
+## Store Procedure
+* https://iter01.com/471453.html
 
 ## 監控 & 其他
 ```xml
