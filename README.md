@@ -119,6 +119,9 @@ try {
 
 ## Log
 * https://segmentfault.com/a/1190000037598528
+* [Log4j2 RollingFileAppender example](https://rumenz.com/java-topic/log4j2/log4j2-rollingfileappender-example/index.html)
+* [Spring Boot學習之Logback和Log4j2整合與日誌發展史](https://www.itread01.com/content/1543060749.html)
+* [TimeBasedRollingPolicy 詳解](http://www.51gjie.com/javaweb/1118.html)
 
 ## 其它
 * https://javabeat.net/spring-framework-interview-questions/
