@@ -119,6 +119,22 @@ try {
 * [JVM應用度量框架Micrometer](https://iter01.com/437347.html)
 * [Actuator+Prometheus+Grafana監控視覺化簡介](https://www.tpisoftware.com/tpu/articleDetails/2446)
 
+
+#### 監控記憶體大小
+* jconsole
+* jol-core
+  ```xml
+  <dependency>
+    <groupId>org.openjdk.jol</groupId>
+    <artifactId>jol-core</artifactId>
+    <version>0.10</version>
+  </dependency>
+  ```
+  使用：
+  ```java
+  System.out.println(GraphLayout.parseInstance(map).toFootprint()); // map 是要監控的物件
+  ```
+
 ## Log
 * https://segmentfault.com/a/1190000037598528
 * [Log4j2 RollingFileAppender example](https://rumenz.com/java-topic/log4j2/log4j2-rollingfileappender-example/index.html)
