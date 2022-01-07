@@ -86,6 +86,8 @@ try {
 - [ ] Persistence Context
    * https://www.baeldung.com/jpa-hibernate-persistence-context
 
+- [ ] [JPA 和 Hiberante 的 AUTO flush 的機制](https://blog.csdn.net/qq_19922839/article/details/120706487)
+
 ## Store Procedure
 * https://iter01.com/471453.html
 
