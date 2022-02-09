@@ -1,6 +1,54 @@
-# Spring-Boot---Notes
-- [ ] 正規表達式
-- [ ] `@Component` 最終也會被掃起來成為 `@Bean`?
+# SpringBoot Notes
+## 01 - Spring Boot 入門
+* CH 0 物件導向設計原則
+  * [0. 物件導向設計原則](https://github.com/memorykghs/Spring-Boot-Notes/blob/main/0.%20%E7%89%A9%E4%BB%B6%E5%B0%8E%E5%90%91%E8%A8%AD%E8%A8%88%E5%8E%9F%E5%89%87.md)
+
+  * [0.1. 環境設定](https://github.com/memorykghs/Spring-Boot-Notes/blob/main/0.1.%20%E7%92%B0%E5%A2%83%E8%A8%AD%E5%AE%9A.md)
+
+  * [0.2. Maven問題解決方式](https://github.com/memorykghs/Spring-Boot-Notes/blob/main/0.2.%20Maven%E5%95%8F%E9%A1%8C%E8%A7%A3%E6%B1%BA%E6%96%B9%E5%BC%8F.md)
+
+* CH 1
+  * [01. Spring Boot Initializr](https://github.com/memorykghs/Spring-Boot-Notes/blob/main/01.%20Spring%20Boot%20Initializr.md)
+
+* CH 2
+  * [02. SpringBoot架構](https://github.com/memorykghs/Spring-Boot-Notes/blob/main/02.%20SpringBoot%E6%9E%B6%E6%A7%8B.md)
+
+* CH 3
+  * [03. Controller-簡介RESTful API](https://github.com/memorykghs/Spring-Boot-Notes/blob/main/03.%20Controller-%E7%B0%A1%E4%BB%8BRESTful%20API.md)
+
+* CH 4
+  * [04. Controller-建立RESTful API](https://github.com/memorykghs/Spring-Boot-Notes/blob/main/04.%20Controller-%E5%BB%BA%E7%AB%8BRESTful%20API.md)
+
+* CH 5
+  * [05. Service](https://github.com/memorykghs/Spring-Boot-Notes/blob/main/05.%20Service.md)
+
+  * [05.5. Service補充](https://github.com/memorykghs/Spring-Boot-Notes/blob/main/05.5.%20Service%E8%A3%9C%E5%85%85.md)
+
+* CH 6
+  * [06. Configuration & RestTemplate](https://github.com/memorykghs/Spring-Boot-Notes/blob/main/06.%20Configuration%20%26%20RestTemplate.md)
+
+* CH 7
+  * [07. JPA-Entity & Repository](https://github.com/memorykghs/Spring-Boot-Notes/blob/main/07.%20JPA-Entity%20%26%20Repository.md)
+  
+  * [07.1. hashCode與equals](https://github.com/memorykghs/Spring-Boot-Notes/blob/main/07.1.%20hashCode%E8%88%87equals.md)
+
+* CH 8
+  * [08. JPA-Service & Controller & Request](https://github.com/memorykghs/Spring-Boot-Notes/blob/main/08.%20JPA-Service%20%26%20Controller%20%26%20Request.md)
+
+  * [08.1. JPQL簡介 & 簡單查詢](https://github.com/memorykghs/Spring-Boot-Notes/blob/main/08.1.%20JPQL%E7%B0%A1%E4%BB%8B%20%26%20%E7%B0%A1%E5%96%AE%E6%9F%A5%E8%A9%A2.md)
+
+  * [08.2. JPQL - Query with Params](https://github.com/memorykghs/Spring-Boot-Notes/blob/main/08.2.%20JPQL%20-%20Query%20with%20Params.md)
+
+  * [08.3. Query with SQL File](https://github.com/memorykghs/Spring-Boot-Notes/blob/main/08.3.%20Query%20with%20SQL%20File.md)
+
+  * [08.4. JPQL - Query with Dynamic SQL](https://github.com/memorykghs/Spring-Boot-Notes/blob/main/08.4.%20JPQL%20-%20Query%20with%20Dynamic%20SQL.md)
+
+* CH 9
+  * [09. 調整 DTO](https://github.com/memorykghs/Spring-Boot-Notes/blob/main/09.%20%E8%AA%BF%E6%95%B4%20DTO.md)
+
+* CH 10
+  * [10. 例外處理](https://github.com/memorykghs/Spring-Boot-Notes/blob/main/10.%20%E4%BE%8B%E5%A4%96%E8%99%95%E7%90%86.md)
+
 #### CH 5
 - [ ] CH5 高內具低耦合?介面宣告?
 - [ ] Bean生命週期
@@ -11,7 +59,6 @@
    * `@Component` 加在 Class 上
    * `@Bean` 通常搭配 `@Configuration` 使用，標註在方法上
    * 雖然最後都會成為 `@Bean`
-- [ ] `@Bean` 一定要跟 `@Configuration` 搭配使用嗎?
 - [ ] 如何控制 `@Configuration` 或是 `@ControllerAdvice` 只針對某幾個 Class?
 #### CH 7
 - [ ] ORM 表現層 v.s. 業務層
