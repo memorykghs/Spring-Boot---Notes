@@ -102,6 +102,16 @@ management:
    * https://super-passbook-3e3.notion.site/ObjectMapper-2367ffacf7a14beca69ae869ccb13d9a
    * https://segmentfault.com/a/1190000023735093
    * https://kucw.github.io/blog/2020/6/java-jackson/
+   ```java
+   //讀入需要更新的目標實體
+   ObjectReader objectReader = mapper.readerForUpdating(list.get(0));
+   //轉json字串
+   String insertJson = mapper.writeValueAsString(list.get(0));
+   // 將源實體的值賦值到目標實體上
+   // CarResponse2Data data = objectReader.readValue(insertJson);
+   // CarResponse2Data data = new CarResponse2Data();
+   CarResponse2Data data = objectReader.readValue(insertJson, CarResponse2Data.class);
+   ```
    * Jackson：https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations
    * @JsonSetter、@JsonGetter
    * @JsonAlias
