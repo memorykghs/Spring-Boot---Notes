@@ -100,6 +100,8 @@ management:
 ```
 -[ ] ObjectMapper
    * https://super-passbook-3e3.notion.site/ObjectMapper-2367ffacf7a14beca69ae869ccb13d9a
+   * https://segmentfault.com/a/1190000023735093
+   * https://kucw.github.io/blog/2020/6/java-jackson/
    * Jackson：https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations
    * @JsonSetter、@JsonGetter
    * @JsonAlias
