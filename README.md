@@ -116,6 +116,23 @@ management:
    * @JsonSetter、@JsonGetter
    * @JsonAlias
 
+## SQL Format Properties
+
+```yml
+# show sql
+spring.jpa.show-sql=true
+
+# formatting
+spring.jpa.properties.hibernate.format_sql=true
+
+# show generate SQL 
+spring.jpa.properties.hibernate.use_sql_comments=true
+
+# printing parameter values in log
+logging.level.org.hibernate.SQL=DEBUG
+logging.level.org.hibernate.type.descriptor.sql.BasicBinder=TRACE
+```
+
 ## Transaction
 - [ ] Transactional Propagation
    * https://www.javainuse.com/spring/boot-transaction-propagation
