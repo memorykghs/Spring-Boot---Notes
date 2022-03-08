@@ -164,6 +164,56 @@ try {
 
 - [ ] [JPA 和 Hiberante 的 AUTO flush 的機制](https://blog.csdn.net/qq_19922839/article/details/120706487)
 
+## Kafka
+```
+列出所有topic
+./kafka-topics.sh --list --zookeeper localhost:2181
+./kafka-topics.sh --list --zookeeper 88.249.45.5:2181
+
+建立topic 名字test  (partition代表此topic希望能建立幾個分區，一般而言，分區愈多處理速度愈快；replication-factor是副本數量)
+./kafka-topics.sh --create --bootstrap-server 88.249.45.5:9092 --replication-factor 1 --partitions 1 --topic topic2
+
+使用producer發送訊息
+./kafka-console-producer.sh --broker-list 88.249.45.5:9092 --topic topic1
+
+使用consumer收訊息
+./kafka-console-consumer.sh --bootstrap-server 88.249.45.5:9092 --from-beginning --topic topic1
+
+刪除topic
+./kafka-topics.sh --delete --zookeeper 88.249.45.5:2181 --topic test
+
+---------------------------------------------------------------------------------
+window kafka 指令
+
+啟動zookeeper
+D:\Zookeeper\bin\zkServer
+
+啟動kafka
+D:\kafka\bin\windows\kafka-server-start.bat D:\kafka\config\server.properties
+
+創建topic (partition代表此topic希望能建立幾個分區，一般而言，分區愈多處理速度愈快；replication-factor是副本數量)
+D:\kafka\bin\windows\kafka-topics.bat --create --bootstrap-server 88.8.125.252:9092 --replication-factor 1 --partitions 1 --topic topic1
+
+創建producer
+D:\kafka\bin\windows\kafka-console-producer.bat --broker-list 88.8.125.194:9092 --topic topic1
+
+創建consumer (加上--from-beginning參數會消費從topic創建開始的所有訊息)
+D:\kafka\bin\windows\kafka-console-consumer.bat --bootstrap-server 88.8.125.252:9092 --topic topic1
+
+列出所有topic
+D:\kafka\bin\windows\kafka-topics.bat --list --zookeeper 88.8.125.249:2181
+
+刪除topic
+D:\kafka\bin\windows\kafka-topics.bat --delete --zookeeper 88.8.125.194:2181 --topic __consumer_offsets
+
+查找8080 PORT
+netstat -ano | findStr "8080"
+
+殺掉該PORT號的PID
+taskkill /f /PID 6092
+
+```
+
 ## Store Procedure
 * https://iter01.com/471453.html
 
