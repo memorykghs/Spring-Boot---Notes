@@ -1,0 +1,11 @@
+Singleton ：一个Spring 容器中只有一个Bean 的实例，此为Spring 的默认配置，全容器共享一个实例。
+2.  Prototype ：每次调用新建一个Bean 的实例。
+3.  Request: Web 项目中，给每一个http request 新建一个Bean 实例。
+4.  Session: Web 项目中，给每一个http session 新建一个Bean 实例。
+5.  Global Session ：这个只在portal 应用中有用，给每一个global http session 新建一个Bean
+实例。
+6.  在Spring Batch 中还有一个Scope 是使用@StepScope 
+
+## Bean Scope 解析
+* https://blog.csdn.net/DERRANTCM/article/details/76286025
+* http://www.heartthinkdo.com/?p=2763
