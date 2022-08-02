@@ -36,6 +36,9 @@
 
 [10. 例外處理](https://github.com/memorykghs/Spring-Boot-Notes/blob/main/10.%20%E4%BE%8B%E5%A4%96%E8%99%95%E7%90%86.md)
 
+## Others 
+* [Google Guava](https://wizardforcel.gitbooks.io/guava-tutorial/content/1.html)
+
 #### CH 5
 - [ ] CH5 高內具低耦合?介面宣告?
 - [ ] Bean生命週期
